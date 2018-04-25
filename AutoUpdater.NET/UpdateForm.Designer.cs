@@ -87,8 +87,8 @@ namespace AutoUpdaterDotNET
             // 
             // buttonSkip
             // 
-            this.buttonSkip.DialogResult = System.Windows.Forms.DialogResult.Abort;
             resources.ApplyResources(this.buttonSkip, "buttonSkip");
+            this.buttonSkip.DialogResult = System.Windows.Forms.DialogResult.Abort;
             this.buttonSkip.Image = global::AutoUpdaterDotNET.Properties.Resources.hand_point;
             this.buttonSkip.Name = "buttonSkip";
             this.buttonSkip.UseVisualStyleBackColor = true;
@@ -107,7 +107,6 @@ namespace AutoUpdaterDotNET
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonSkip);
             this.Controls.Add(this.buttonRemindLater);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UpdateForm";

@@ -157,7 +157,12 @@ namespace AutoUpdaterDotNET
                     Arguments = arguments.ToString()
                 };          
             }
-            
+
+            if (extension.ToLower().Equals(".msi"))
+            {
+                processStartInfo = new ProcessStartInfo { FileName = "msiexec", Arguments = "/i " + tempPath };
+            }
+
             if (AutoUpdater.RunUpdateAsAdmin)
             {
                 processStartInfo.Verb = "runas";
