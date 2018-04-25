@@ -1,12 +1,6 @@
-# AutoUpdater.NET  [![Build status](https://ci.appveyor.com/api/projects/status/yng987o7dauk9gqc?svg=true)](https://ci.appveyor.com/project/ravibpatel/autoupdater-net) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/rbsoft)
+# AutoUpdater.NET 
 
 AutoUpdater.NET is a class library that allows .NET developers to easily add auto update functionality to their classic desktop application projects.
-
-## The NuGet package  [![NuGet](https://img.shields.io/nuget/v/Autoupdater.NET.Official.svg)](https://www.nuget.org/packages/Autoupdater.NET.Official/) [![NuGet](https://img.shields.io/nuget/dt/Autoupdater.NET.Official.svg)](https://www.nuget.org/packages/Autoupdater.NET.Official/)
-
-`https://www.nuget.org/packages/Autoupdater.NET.Official/`
-
-    PM> Install-Package Autoupdater.NET.Official
 
 ## How it works
 
@@ -54,6 +48,12 @@ Now you just need to add following line to your main form constructor or in Form
 ````csharp
 AutoUpdater.Start("http://rbsoft.org/updates/AutoUpdaterTest.xml");
 ````
+
+For VSTO-AddIns the Start method must be called like this:
+
+```cs
+AutoUpdater.Start("http://rbsoft.org/updates/AutoUpdaterTest.xml", System.Reflection.Assembly.GetExecutingAssembly());
+```
 
 Start method of AutoUpdater class takes URL of the XML file you uploaded to server as a parameter.
 
