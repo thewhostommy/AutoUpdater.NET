@@ -86,6 +86,9 @@ namespace AutoUpdaterDotNET
             if (!HideReleaseNotes)
             {
                 webBrowser.Navigate(AutoUpdater.ChangelogURL);
+
+                //this.webBrowser.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.webBrowser_Navigating);
+                webBrowser.Navigating += webBrowser_Navigating;
             }
         }
 
@@ -175,6 +178,12 @@ namespace AutoUpdaterDotNET
         private void UpdateForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             AutoUpdater.Running = false;
+        }
+
+        private void webBrowser_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            e.Cancel = true;
+            Process.Start(e.Url.ToString());
         }
     }
 }

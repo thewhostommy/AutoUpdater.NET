@@ -39,6 +39,7 @@ namespace AutoUpdaterDotNET
             this.buttonRemindLater = new System.Windows.Forms.Button();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.buttonSkip = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,8 +81,8 @@ namespace AutoUpdaterDotNET
             // 
             // pictureBoxIcon
             // 
-            this.pictureBoxIcon.Image = global::AutoUpdaterDotNET.Properties.Resources.update;
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
+            this.pictureBoxIcon.Image = global::AutoUpdaterDotNET.Properties.Resources.update;
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
             // 
@@ -94,11 +95,17 @@ namespace AutoUpdaterDotNET
             this.buttonSkip.UseVisualStyleBackColor = true;
             this.buttonSkip.Click += new System.EventHandler(this.ButtonSkipClick);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // UpdateForm
             // 
             this.AcceptButton = this.buttonUpdate;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.labelReleaseNotes);
             this.Controls.Add(this.labelDescription);
@@ -128,6 +135,6 @@ namespace AutoUpdaterDotNET
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Label labelReleaseNotes;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
-
+        private System.Windows.Forms.Label label1;
     }
 }
