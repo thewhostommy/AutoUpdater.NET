@@ -118,48 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="webBrowser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>620, 406</value>
-  </data>
-  <data name="labelUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 19</value>
-  </data>
-  <data name="labelUpdate.Text" xml:space="preserve">
-    <value>Eine neue Version für {0} ist verfügbar!</value>
-  </data>
-  <data name="labelDescription.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 30</value>
-  </data>
-  <data name="labelDescription.Text" xml:space="preserve">
-    <value>{0} {1} ist jetzt verfügbar. Aktuell ist Version {2} installiert. Soll die neue Version jetzt heruntergeladen und installiert werden?</value>
-  </data>
   <data name="labelReleaseNotes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 96</value>
-  </data>
-  <data name="labelReleaseNotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 17</value>
-  </data>
-  <data name="labelReleaseNotes.Text" xml:space="preserve">
-    <value>Versionshinweise:</value>
-  </data>
-  <data name="buttonRemindLater.Text" xml:space="preserve">
-    <value>Später erinnern</value>
-  </data>
-  <data name="buttonSkip.Text" xml:space="preserve">
-    <value>Version überspringen</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>533, 15</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Achtung: Während der Installation wird die aktuell laufende Anwendung automatisch beendet!</value>
+    <value>9, 92</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -698,8 +658,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>{0} {1} ist möglich!</value>
   </data>
 </root>
